@@ -2,6 +2,7 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
 import List from '../components/List';
+//import Profile from '../components/Profile';
 import './Page.css';
 
 const Page: React.FC = () => {
@@ -35,6 +36,7 @@ const Page: React.FC = () => {
     </IonPage>
     }
     </>
+    
   );
 };
 

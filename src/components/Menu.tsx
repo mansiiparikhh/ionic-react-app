@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { archiveOutline, archiveSharp, bookmarkOutline, checkboxSharp, heartOutline, heartSharp, list, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -25,12 +25,78 @@ const appPages: AppPage[] = [
   {
     title: 'List',
     url: '/List',
+    iosIcon: list,
+    mdIcon: list
+  },
+  {
+    title: 'Profile',
+    url: '/Profile',
     iosIcon: mailOutline,
     mdIcon: mailSharp
   },
   {
-    title: 'Profile',
-    url: '/page/Inbox',
+    title: 'Ion Card',
+    url: '/Card',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Check box',
+    url: '/CheckBox',
+    iosIcon: checkboxSharp,
+    mdIcon: checkboxSharp
+  },
+  {
+    title: 'Budge',
+    url: '/Budge',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Chip',
+    url: '/Chip',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Alert',
+    url: '/Alert',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'ActionSheet',
+    url: '/ActionSheet',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'InfiniteScroll',
+    url: '/InfiniteScroll',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Progressbar',
+    url: '/Progressbar',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Searchbar',
+    url: '/Searchbar',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Toast',
+    url: '/Toast',
+    iosIcon: mailOutline,
+    mdIcon: mailSharp
+  },
+  {
+    title: 'Model',
+    url: '/Model',
     iosIcon: mailOutline,
     mdIcon: mailSharp
   },
@@ -75,8 +141,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
+          <IonListHeader>Menu</IonListHeader>
+          <IonNote>Ionic Components</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
