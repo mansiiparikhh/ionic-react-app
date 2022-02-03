@@ -1,0 +1,36 @@
+STEP 1
+———-
+ -> workspace-react-ionic
+-> customer-app
+
+Install ionic
+————
+-> npm install -g @ionic/cli / sudo npm install -g @ionic/cli 
+
+-> ionic start
+-> ? Use the app creation wizard? (Y/n) : N
+
+-> ? Framework: 
+  Angular | https://angular.io 
+❯ React   | https://reactjs.org 
+  Vue     | https://vuejs.org 
+
+-> ? Project name: CustomerApp
+
+-> ? Starter template: blank
+
+IOS Setup steps.
+—————————
+sudo npm install -g ios-sim  
+sudo brew install ios-deploy  
+brew install ios-deploy  
+ionic capacitor add ios  
+ionic cordova prepare ios  
+
+sudo npm install @capacitor/core
+sudo ionic capacitor add ios
+sudo npm install @capacitor/cli --save-dev
+sudo npx cap init
+
+npm run build
+npx cap run ios
