@@ -24,7 +24,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import List from './components/List';
 import DefaultPage from './components/DefaultPage';
-import Profile from './components/Profile';
+import {Profile} from './components/profile';
 import {CardExamples} from './components/IonCard';
 import { CheckboxExamples } from './components/CheckBox';
 import {BadgeExample} from './components/Budge'

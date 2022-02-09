@@ -4,7 +4,7 @@ import ExploreContainer from './ExploreContainer';
 import Header from './Header';
 import React, { useState } from 'react';
 
-const Profile: React.FC = () => {
+export const Profile: React.FC = () => {
   React.useEffect(() => {
   }, []);
 
@@ -43,4 +43,3 @@ const Profile: React.FC = () => {
   );
 };
 
-export default Profile;
